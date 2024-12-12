@@ -257,65 +257,6 @@ $('document').ready(function(){
 ///////////////////////////////////music
 
 
-// $(document).ready(function() {
-//     // When "Let the Melody Flow" button is clicked
-//     $('#play').click(function() {
-//         // Create music note on the right side
-//         var $musicNoteRight = $('<div class="music-note-right">🎶</div>');
-//         var randomTop = Math.random() * 100;  // Random vertical position for the music note
-//         var randomDelay = Math.random() * 2 + 's'; // Random delay for staggered effect
-//         $musicNoteRight.css('top', randomTop + '%'); // Set random starting position vertically
-//         $('body').append($musicNoteRight); // Add the music note to the page
-//         $musicNoteRight.css('animation-delay', randomDelay); // Delay the start of the animation
-
-//         // Create heart on the right side
-//         var $heartRight = $('<div class="music-heart-right">❤️</div>');
-//         $heartRight.css('top', randomTop + '%'); // Random vertical position for hearts
-//         $('body').append($heartRight);
-//         $heartRight.css('animation-delay', randomDelay); // Delay heart animations
-
-//         // Optionally, fade in the "Time to Sparkle" button after animation starts
-//         setTimeout(function() {
-//             $('#bannar_coming').fadeIn();
-//         }, 3000); // Adjust the time delay to match animation length
-//     });
-// });
-
-
-
-
-// $(document).ready(function() {
-//     // When "Let the Melody Flow" button is clicked
-//     $('#play').click(function() {
-//         // Create music note on the right side
-//         var $musicNoteRight = $('<div class="music-note-right">🎶</div>');
-//         var randomTop = Math.random() * 100;  // Random vertical position for the music note
-//         var randomDelay = Math.random() * 2 + 's'; // Random delay for staggered effect
-//         $musicNoteRight.css('top', randomTop + '%'); // Set random starting position vertically
-//         $('body').append($musicNoteRight); // Add the music note to the page
-//         $musicNoteRight.css('animation-delay', randomDelay); // Delay the start of the animation
-
-//         // Create heart on the right side
-//         var $heartRight = $('<div class="music-heart-right">❤️</div>');
-//         $heartRight.css('top', randomTop + '%'); // Random vertical position for hearts
-//         $('body').append($heartRight);
-//         $heartRight.css('animation-delay', randomDelay); // Delay heart animations
-
-//         // Optionally, fade in the "Time to Sparkle" button after animation starts
-//         setTimeout(function() {
-//             $('#bannar_coming').fadeIn();
-//         }, 3000); // Adjust the time delay to match animation length
-
-//         // Stop the animation when the "Time to Sparkle" button fades in
-//         $('#bannar_coming').on('click', function() {
-//             // Remove music note and heart after the button fades in
-//             setTimeout(function() {
-//                 $musicNoteRight.remove(); // Remove music note
-//                 $heartRight.remove();     // Remove heart
-//             }, 500); // Slight delay to allow any remaining animation to finish
-//         });
-//     });
-// });
 
 
 
