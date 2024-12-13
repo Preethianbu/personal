@@ -333,6 +333,61 @@ $(document).ready(function() {
 
 
 
+$(document).ready(function() {
+    // When the "Fuel the Flame" button is clicked, show the cake2 image
+    $("#light_candle").click(function() {
+        // Show the cake2 image with a fade-in effect
+        $("#cake2Image").fadeIn();
+
+        // Hide the cake2 image after 3 seconds (3000ms)
+        setTimeout(function() {
+            $("#cake2Image").fadeOut();
+        }, 3000); // 3 seconds delay
+    });
+
+    // Optionally, you can add an event to hide the image when another action is triggered
+    // For example, hide cake2Image when "Sinfully Good Cake" button is clicked
+    $("#cake_fadein").click(function() {
+        $("#cake2Image").fadeOut();  // Hide the cake image when this button is clicked
+    });
+});
+
+$("#light_candle").click(function() {
+    console.log("Fuel the Flame button clicked!");
+    $("#cake2Image").fadeIn();
+    setTimeout(function() {
+        console.log("Hiding cake2Image after 3 seconds!");
+        $("#cake2Image").fadeOut();
+    }, 3000);
+});
+
+$(document).ready(function() {
+    // Hide the cake images initially when the page loads
+    $(".cake-image, .cake2-image").hide();
+
+    // When the "Fuel the Flame" button is clicked
+    $("#light_candle").click(function() {
+        // Show the cake2 image with a fade-in effect on laptop and desktop
+        if ($(window).width() >= 768 && $(window).width() <= 1366) {
+            $(".cake2-image").fadeIn();
+        }
+
+        // Optionally, you can set a timeout to hide the image after 3 seconds
+        setTimeout(function() {
+            $(".cake2-image").fadeOut();
+        }, 3000); // 3 seconds delay
+    });
+
+    // Optionally, you can add an event to hide the image when "Sinfully Good Cake" button is clicked
+    $("#cake_fadein").click(function() {
+        $(".cake2-image").fadeOut();  // Hide the cake2 image when this button is clicked
+    });
+});
+
+
+
+
+
 
 //////balloons adjustment 
 

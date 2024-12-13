@@ -1454,10 +1454,9 @@ audio {
   }
   
 
+/*cake*/
 
-  /*cake*/
-
-  /* Position the cake image on the right side of the screen */
+/* Position the cake image on the right side of the screen for laptop screens */
 .cake-image {
     position: fixed;
     top: 50%;
@@ -1465,12 +1464,10 @@ audio {
     transform: translateY(-50%);
     display: none; /* Initially hidden */
     z-index: 10; /* Ensure it's on top of other content */
-    width: 200px; /* You can adjust the size of the cake image */
+    width: 200px; /* Adjust the size of the cake image */
     height: auto;
-	margin-right: 120px;
+    margin-right: 120px;
 }
-
-
 
 /* Position the cake2 image on the right side of the screen */
 .cake2-image {
@@ -1482,9 +1479,10 @@ audio {
     z-index: 10; /* Ensure it's on top of other content */
     width: 200px; /* Adjust the size of the cake image */
     height: auto;
-	margin-right: 120px;
+    margin-right: 120px;
 }
 
+/* Laptop Screen Size: Between 768px and 1366px */
 
 
 
@@ -1515,18 +1513,10 @@ audio {
 
 
 /* Mobile View - Hide the cake image by default on mobile devices (<= 768px) */
-@media (max-width: 768px) {
-	#cake2Image {
-		display: none !important; /* Hide the cake image initially */
-	}
-}
+
 
 /* For extra small screens (<= 480px), keep the image hidden */
-@media (max-width: 480px) {
-	#cake2Image {
-		display: none !important; /* Hide the cake image on smaller mobile screens */
-	}
-}
+
 
 /* Style for the cake image */
 #cake2Image {
